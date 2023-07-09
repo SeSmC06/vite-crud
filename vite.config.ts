@@ -1,4 +1,5 @@
 import { defineConfig, type Plugin } from "vite";
+import path from "path";
 import react from "@vitejs/plugin-react-swc";
 import mixPlugin, { type Adapter } from "vite-plugin-mix";
 
@@ -21,4 +22,9 @@ export default defineConfig({
   /**
    * resolve file path
    */
+  resolve: {
+    alias: {
+      lib: path.resolve(process.cwd(), "./lib"),
+    },
+  },
 });
