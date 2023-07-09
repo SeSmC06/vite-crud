@@ -1,14 +1,19 @@
-export const books = [
+import { v4 as uuidV4 } from "uuid";
+
+export const todos = [
   {
-    title: "The Awakening",
-    author: "Kate Chopin",
+    id: uuidV4(),
+    message: "Go to costco",
+    isDone: false,
   },
   {
-    title: "City of Glass",
-    author: "Paul Auster",
+    id: uuidV4(),
+    message: "Buy two Razors",
+    isDone: false,
   },
   {
-    title: "Start apollo",
-    author: "Tom Ding",
+    id: uuidV4(),
+    message: "Shower on saturday",
+    isDone: false,
   },
 ];

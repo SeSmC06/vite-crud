@@ -15,3 +15,5 @@ once app starts
 using apollo server setup with express, can use REST
 
 visit: `/graphql`, playground to query/mutation
+
+from [vite-fullstack](https://github.com/cjcarrick/vite-fullstack/tree/main/)
